@@ -1,0 +1,20 @@
+@use './tokens' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  background: $color-gray-00;
+  color: $color-black;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-inline: $spacing-xs;
+}
